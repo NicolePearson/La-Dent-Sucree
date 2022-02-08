@@ -1,0 +1,34 @@
+Images:
+
+Photos du header:
+- cuisine-addict.com
+- bellahousewares.com
+- lespepitesdenoisette.fr
+- petitsfrenchies.com
+
+Photos de la page d'acceuil:
+- hips.hearstapps.com
+
+Icons:
+- iconfinder.com
+
+Photo de la page connexion:
+- 3brothersbakery.com
+
+Barre de recherche:
+- Search bar de Takane Ichinose (codepen.io)
+
+Menu:
+- Navigation Animation de StyleShit (codepen.io)
+
+Menu burger:
+- jQuery toggleClass fixed hamburger menu de duey tam (codepen.io)
+
+Effet fade-out du menu quand on scroll:
+- Scroll Activated Animation || HTML,CSS,jQuery de Rinkans (Youtube) 
+
+Page Connexion:
+- Day 001 Login Form de Mohan Khadka (codepen.io)
+
+Effet hover sur les figcaptions des pages patisseries et gâteaux:
+- CSS-Figcaption Hover de Jonathan Hermansen (codepen.io)

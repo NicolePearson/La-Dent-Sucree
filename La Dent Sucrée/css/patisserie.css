@@ -1,0 +1,342 @@
+/**Adaptation pour écrans tablets et mobiles**/
+@media screen and (max-width:772px) and (min-width:320px) {
+
+    /***Défilé des photos***/
+    .slider {
+        overflow: hidden;
+        z-index: 0;
+        padding-bottom: 3%;
+        border-bottom: 2px solid black;
+    }
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 13s slider infinite;
+    }
+
+    .slider figure img {
+        float: left;
+        width: 20%;
+        z-index: 0;
+    }
+
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+    
+    /***Les figures***/
+    img {
+        max-width: 100%;
+        display: block;
+        z-index: -1;
+    }
+
+    figure.style {
+        width: 300px;
+        margin: 30px auto;
+        padding: 0;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    figure.style figcaption {
+        position: absolute;
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        background: rgba(255,255,255,0.6);
+        padding: 15px;
+        z-index:0;
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        bottom:0;
+        left: 0;
+    }
+    
+    figure.style figcaption a {
+        text-decoration: none;
+    }
+    
+    .EffetHover {
+        font-family: 'Cinzel', serif;
+        color: black;
+        border: 1px solid black;
+        padding: 2px;
+        transition: background-color 0.5s;
+    }
+    
+    /***Autres***/
+    h2 {
+        text-align: left;
+        padding: 2vw;
+        margin-top: 4vw;
+        font-size: 8vw;
+    }
+
+    .patisserie {
+        font-size: 5vw;
+        border: none;
+        margin: 0;
+        padding: 5%;
+    }
+
+    .container > li {
+        padding: 1vw;
+        z-index: 0;
+    }
+
+    span {
+        font-family: 'Cinzel', serif;
+        color: black;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .gourmand {
+        font-size: 5vw;
+    }
+
+    .info {
+        font-size: 80%;
+    }
+}
+
+/**Adaptation pour pc et grand écrans**/
+@media screen and (min-width:773px) {
+
+
+    /***Animation hover sur les figures***/
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    figure.style {
+        width: 300px;
+        margin: 30px auto;
+        padding: 0;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    figure.style figcaption {
+        position: absolute;
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        background: white;
+        padding: 15px;
+        z-index: 100;
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        top: 50%;
+        left: 0;
+        -moz-transform: translate3d(-100%, -50%, 0);
+        -webkit-transform: translate3d(-100%, -50%, 0);
+        transform: translate3d(-100%, -50%, 0);
+        opacity: 0;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    figure.style figcaption a {
+        text-decoration: none;
+    }
+
+    figure.pushup img {
+        -moz-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+    figure.pushup figcaption {
+        top: 100%;
+        opacity: 1;
+        -moz-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    figure.pushup:hover img {
+        -moz-transform: translate3d(0, -20px, 0);
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+        opacity: 0.5;
+    }
+
+    figure.pushup:hover figcaption {
+        -moz-transform: translate3d(0, -100%, 0);
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        box-shadow: 0px -2px 28px rgba(0, 0, 0, 0.3);
+    }
+    
+    /***Défilé des photos***/
+    .slider {
+        overflow: hidden;
+        z-index: 0;
+        padding-bottom: 3%;
+        border-bottom: 2px solid black;
+    }
+
+    .slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 13s slider infinite;
+    }
+
+    .slider figure img {
+        float: left;
+        width: 20%;
+        z-index: 0;
+    }
+
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+
+        20% {
+            left: 0;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        45% {
+            left: -100%;
+        }
+
+        50% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -300%;
+        }
+
+        95% {
+            left: -300%;
+        }
+
+        100% {
+            left: -400%;
+        }
+    }
+
+    /***CSS flex***/
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /***Effet hover sur les liens 'Consulter'***/
+    .EffetHover {
+        font-family: 'Cinzel', serif;
+        color: black;
+        border: 1px solid black;
+        padding: 2px;
+        transition: background-color 0.5s;
+    }
+
+    .EffetHover:hover {
+        background-color: #F088B4;
+    }
+
+    /***Autres***/
+    h2 {
+        text-align: left;
+        padding: 2vw;
+        margin-top: 4vw;
+        font-size: 8vw;
+    }
+
+    .patisserie {
+        font-size: 1.2vw;
+        border: none;
+        margin: 0;
+        padding: 5%;
+    }
+
+    .container > li {
+        padding: 1vw;
+    }
+
+    span {
+        font-family: 'Cinzel', serif;
+        color: #F088B4;
+        padding: 5%;
+        text-align: left;
+    }
+
+    .gourmand {
+        font-size: 5vw;
+    }
+
+    .info {
+        font-size: 80%;
+    }
+
+
+}
